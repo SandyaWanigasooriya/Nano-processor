@@ -1,0 +1,12 @@
+entity mux_2_to_3 is
+    Port ( r0 : in STD_LOGIC_VECTOR (2 downto 0);
+           r1 : in STD_LOGIC_VECTOR (2 downto 0);
+           o : out STD_LOGIC_VECTOR (2 downto 0);
+           s : in STD_LOGIC);
+end mux_2_to_3;
+
+architecture Behavioral of mux_2_to_3 is
+
+begin
+o <= r0 when s='0' else r1;
+end Behavioral;
