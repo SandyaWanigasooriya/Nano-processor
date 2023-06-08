@@ -1,0 +1,12 @@
+entity Incrementer is
+    Port ( A:in std_logic_vector (2 downto 0);
+           S:out std_logic_vector (2 downto 0));
+--           attribute use_dsp : string;
+--           attribute use_dsp of Incrementer : entity is "yes";
+           
+end Incrementer;
+architecture Behavioral of Incrementer is
+
+begin
+S <= A + 1;
+end Behavioral;
